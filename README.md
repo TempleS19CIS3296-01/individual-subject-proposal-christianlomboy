@@ -1,17 +1,26 @@
-# IndividualProjectProposal
+# RedReader 
+#### [GitHub link](https://github.com/QuantumBadger/RedReader) | [Google Play store link](https://play.google.com/store/apps/details?id=org.quantumbadger.redreader)
+### _My proposed contribution_: a 'SAVE' button implementation for subreddits
 
-## Each project proposal contains:
+## Project Abstract
+RedReader is a free, zero ad, open source Android client for reddit. It is robust with features, while also maintaining a lightweight footprint. The application itself is built using Gradle.
 
-- A one paragraph description of the overall project
-- A one paragraph explanation of how the proposal is linked to the educational goals of this class and why this goal is important goal (see list of subject in Initial Survey or slide 7 and 8 in CIS3296Introduction.pptx).
-- A one paragraph description of your proposed contribution
-- A URL reference to the project
+<p align="center"> <img src= "redreader_home.png" width="200"/> </p>
 
-Note: contributing to an open-source project is preferred. You may propose a stand-alone project, but if you do, it must be submitted as an open-source project.
+## Project Relevance
+RedReader is a large, open-source project that has been worked on by over 90 contributors on GitHub. Overall, there has been over 1,200 commits to the repo. Because this project is so large in scale, I believe it aligns with the core goals of Software Design: to perform tasks such as project management, version control, build, test, and issue tracking.
 
-Note: in picking an open-source project you should down-load the source and make sure that you can build the code before committing to use it in your project.
+## Conceptual Design
+While playing around with RedReader in my Android environment, I noticed that the ability to subscribe to a subreddit is a tad cumbersome. In order to subscribe to a subreddit (once signed in to your reddit account), you must visit a subreddit you are not yet subscribed to by tapping the 'Custom Location' text in the main menu and typing in the subreddit's name. Then you have to tap the three dots in the top right corner to expose a drop down menu, then tap the 'Subscribe' text. 
+##### This process currently takes four user interactions. My conceptual design would halve the number of required user interactions to subscribe to a subreddit.
+In order to achieve this reduction in interactions, I will implement a subscribe button that a user can tap immediately after entering the subreddit's name in the 'Custom Location' view.
 
-Note: this is an individual assignment all students have to come with a personal proposal.  Teams will be formed later to work on a selection of the more interesting proposals. 
+<p align="center"> <img src= "subscribe_concept.png" width="200"/> </p>
 
-## What to submit
-Create two new files named **YourName_ProjectTitle.md** and **YourName_ProjectTitle.png** for your proposal. Use [StellaOwl_PayStation.md](StellaOwl_Paystation.md) as a template. 
+## Use Case
+<p align="center"> <img src= "uml_case.png" width="400"/> </p>
+The user will interact with the 'Subscribe' button. Upon being touched, the app will send the user input to the API. The API will allow the app to communicate directly with reddit's servers, allowing the user to add the specified subreddit to their subscriptions.
+
+## Background
+_<https://github.com/QuantumBadger/RedReader>_
+
