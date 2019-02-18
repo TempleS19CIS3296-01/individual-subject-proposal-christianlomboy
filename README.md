@@ -12,7 +12,7 @@ RedReader is a large, open-source project that has been worked on by over 90 con
 
 ## Conceptual Design
 While playing around with RedReader in my Android environment, I noticed that the ability to subscribe to a subreddit is a tad cumbersome. In order to subscribe to a subreddit (once signed in to your reddit account), you must visit a subreddit you are not yet subscribed to by tapping the 'Custom Location' text in the main menu and typing in the subreddit's name. Then you have to tap the three dots in the top right corner to expose a drop down menu, then tap the 'Subscribe' text. 
-##### This process currently takes four user interactions. My conceptual design would halve the number of required user interactions to subscribe to a subreddit.
+### This process currently takes four user interactions. My conceptual design would halve the number of required user interactions to subscribe to a subreddit.
 In order to achieve this reduction in interactions, I will implement a subscribe button that a user can tap immediately after entering the subreddit's name in the 'Custom Location' view.
 
 <p align="center"> <img src= "subscribe_concept.png" width="200"/> </p>
